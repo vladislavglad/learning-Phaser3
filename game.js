@@ -10,7 +10,8 @@ var config = {
             debug: false
         }
     },
-    pixelArt: true
+    pixelArt: true,
+    zoom: 2
 };
 
 var gameSettings = {

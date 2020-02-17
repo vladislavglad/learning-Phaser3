@@ -115,7 +115,7 @@ class Scene2 extends Phaser.Scene {
     }
 
     pickUp(player, powerUp) {
-        score += 100;
+        score += 50;
         this.gameScore.setText(`Score: ${score}`);
 
         powerUp.disableBody(true, true);
@@ -141,7 +141,7 @@ class Scene2 extends Phaser.Scene {
     }
 
     hitShip(projectile, ship) {
-        score += 10;
+        score += 15;
         this.gameScore.setText(`Score: ${score}`);
 
         this.resetShipPos(ship);
@@ -176,7 +176,7 @@ class Scene2 extends Phaser.Scene {
     destroyShip(pointer, gameObject) {
         gameObject.setTexture("explosion");
         gameObject.play("explode");
-        score += 10;
+        score += 15;
         this.gameScore.setText(`Score: ${score}`);
     }
 
@@ -184,7 +184,7 @@ class Scene2 extends Phaser.Scene {
     //     //projectile.disableBody(true, true);
     //     gameObject.setTexture("explosion");
     //     gameObject.play("explode");
-    //     score += 10;
+    //     score += 15;
     //     this.gameScore.setText(`Score: ${score}`);
     // }
 }
